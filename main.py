@@ -43,7 +43,7 @@ def altepaseIndication() :
 
     if float(onset.get()) < 4.5 and int(sbp.get()) < 185 and int(dbp.get()) <110 and int(nihss.get()) >= 5:
         messagebox.showinfo("Result", "Altepase is indicated")
-    elif float(onset.get()) > 3.5:
+    elif float(onset.get()) > 4.5:
         messagebox.showinfo("Result", "Altepase isn't indicated due to onset > 4.5 hrs")
     elif int(sbp.get()) > 185 or int(dbp.get()) > 110:
         messagebox.showinfo("Result", "Altepase isn't indicated due to uncontrollable BP")
